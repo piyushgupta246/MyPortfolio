@@ -17,7 +17,7 @@
 ## 📫 Let's Connect
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/piyush-kumar-gupta-089312303/)
-- 📧 your.email@example.com
+- 📧 pgupta0122333@gmail.com
 
 ---
 
