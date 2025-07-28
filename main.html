@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Kumar Gupta | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased">
+    <!-- Header & Navigation -->
+    <header id="header" class="glass-effect fixed top-0 left-0 right-0 z-50">
+        <div class="container-main px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-white">Portfolio</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="nav-link text-gray-300 hover:text-white active">Home</a>
+                <a href="#experience" class="nav-link text-gray-300 hover:text-white">Experience</a>
+                <a href="#skills" class="nav-link text-gray-300 hover:text-white">Skills</a>
+                <a href="#projects" class="nav-link text-gray-300 hover:text-white">Projects</a>
+                <a href="#blog" class="nav-link text-gray-300 hover:text-white">Blog</a>
+                <a href="#contact" class="nav-link text-gray-300 hover:text-white">Contact</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#home" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Home</a>
+            <a href="#experience" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Experience</a>
+            <a href="#skills" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Skills</a>
+            <a href="#projects" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Projects</a>
+            <a href="#blog" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Blog</a>
+            <a href="#contact" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section py-16 pt-24 md:pt-0">
+            <div class="container-main px-6 flex flex-col md:flex-row items-center justify-between">
+                <!-- Left Content -->
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">I'm Piyush</h1>
+                    <p class="text-lg md:text-xl text-blue-400 mb-8 h-16 md:h-8">
+                        <span id="typing-effect"></span>
+                    </p>
+                    <p class="max-w-xl mx-auto md:mx-0 text-gray-400 mb-10">
+                        A passionate Computer Science student specializing in Data Science and AI. I build intelligent systems that solve real-world problems, from computer vision to predictive modeling.
+                    </p>
+                    <div class="flex justify-center md:justify-start space-x-6">
+                        <a href="https://www.linkedin.com/in/piyush-kumar-gupta-089312303" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-linkedin text-3xl"></i></a>
+                        <a href="https://github.com/piyushgupta246" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-github text-3xl"></i></a>
+                        <a href="https://leetcode.com/u/pgupta246" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fas fa-code text-3xl"></i></a>
+                        <a href="mailto:pgupta0122333@gmail.com" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fas fa-envelope text-3xl"></i></a>
+                        <a href="tel:+916387120398" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fas fa-phone-alt text-3xl"></i></a>
+                    </div>
+                    <div class="mt-8">
+                        <a href="media/resume.pdf" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">View Resume</a>
+                    </div>
+                </div>
+                <!-- Right Image -->
+                <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+                    <img src="media/profile_logo.jpg" alt="Piyush Kumar Gupta" class="rounded-full shadow-lg w-64 h-64 md:w-80 md:h-80 object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section py-16 pt-24 md:pt-0 bg-gray-800/50">
+            <div class="container-main px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Experience & Events</h2>
+                <div class="relative max-w-4xl mx-auto">
+                    <!-- Timeline line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-700"></div>
+                    
+                    <!-- Timeline Item 1 -->
+                    <div class="experience-item mb-12 flex justify-between items-center w-full">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                            <i class="fas fa-briefcase mx-auto text-white text-sm"></i>
+                        </div>
+                        <div class="order-1 glass-effect rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <p class="text-sm text-gray-400">Nov 2024 - Jan 2025</p>
+                            <h3 class="font-bold text-lg text-white mb-2">AI & ML Trainee</h3>
+                            <p class="text-sm font-medium text-blue-400 mb-2">Pyramid IT Consulting Pvt. Ltd.</p>
+                            <p class="text-sm text-gray-300">Built image classification and real-time object detection systems using PyTorch and YOLOv5.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="experience-item mb-12 flex justify-between flex-row-reverse items-center w-full">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                            <i class="fas fa-chart-line mx-auto text-white text-sm"></i>
+                        </div>
+                        <div class="order-1 glass-effect rounded-lg shadow-xl w-5/12 px-6 py-4">
+                             <p class="text-sm text-gray-400">Oct 2024 - Nov 2024</p>
+                            <h3 class="font-bold text-lg text-white mb-2">Data Science Intern</h3>
+                            <p class="text-sm font-medium text-blue-400 mb-2">Next Gen Dev</p>
+                            <p class="text-sm text-gray-300">Developed ML projects like stock prediction and sentiment analysis, and deployed models for real-time predictions.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 3 -->
+                    <div class="experience-item mb-12 flex justify-between items-center w-full">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                            <i class="fas fa-trophy mx-auto text-white text-sm"></i>
+                        </div>
+                        <div class="order-1 glass-effect rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <p class="text-sm text-gray-400">Sep 2024</p>
+                            <h3 class="font-bold text-lg text-white mb-2">Hackathon Runner-up</h3>
+                            <p class="text-sm font-medium text-blue-400 mb-2">GeeksForGeeks Hackfest 2024</p>
+                            <p class="text-sm text-gray-300">Developed a pneumonia detection web app using a CNN model with high accuracy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section py-16 pt-24 md:pt-0">
+            <div class="container-main px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Technical Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                    <!-- Languages -->
+                    <div class="skill-card glass-effect p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-white mb-4">Languages</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Java</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
+                        </div>
+                    </div>
+                    <!-- Frontend -->
+                    <div class="skill-card glass-effect p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-white mb-4">Frontend</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">React.js</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">HTML</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">CSS</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Tailwind</span>
+                        </div>
+                    </div>
+                    <!-- Backend -->
+                    <div class="skill-card glass-effect p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-white mb-4">Backend</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Flask</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Django</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">API Integration</span>
+                        </div>
+                    </div>
+                    <!-- ML/AI -->
+                    <div class="skill-card glass-effect p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-white mb-4">Machine Learning & AI</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">TensorFlow</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Keras</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Scikit-learn</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">OpenCV</span>
+                        </div>
+                    </div>
+                    <!-- Data Science -->
+                    <div class="skill-card glass-effect p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-white mb-4">Data Science</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Apache Spark</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">PySpark</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Pandas</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">NumPy</span>
+                        </div>
+                    </div>
+                    <!-- Tools & Platforms -->
+                    <div class="skill-card glass-effect p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-white mb-4">Tools & Platforms</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Git/GitHub</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">MySQL</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">AWS</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Tableau</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Power BI</span>
+                        </div>
+                    </div>
+                    <!-- Databases -->
+                    <div class="skill-card glass-effect p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-white mb-4">Databases</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">MySQL</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">MongoDB</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <!-- Soft Skill -->
+                    <div class="skill-card glass-effect p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-white mb-4">Soft Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Effective Communication</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Leadership</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Problem Solving</span>
+                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Team Management</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section py-16 pt-24 md:pt-0 bg-gray-800/50">
+            <div class="container-main px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Featured Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-effect rounded-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Rooftop Solar Energy Estimation</h3>
+                            <p class="text-gray-400 mb-4 text-sm">Developed a vision transformer model to estimate rooftop solar suitability from satellite images, aiding in renewable energy planning and deployment.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">TensorFlow</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Vision Transformer</span>
+                            </div>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                            
+                        </div>
+                    </div>
+                     <!-- Project 2 -->
+                    <div class="project-card glass-effect rounded-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Smart AI Assistant</h3>
+                            <p class="text-gray-400 mb-4 text-sm">Built an AI research assistant with real-time query handling using React and Flask, providing contextual responses through advanced NLP APIs.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">React</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Flask</span>
+                                 <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">NLP</span>
+                            </div>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                            
+                        </div>
+                    </div>
+                     <!-- Project 3 -->
+                    <div class="project-card glass-effect rounded-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Sign Language Detection</h3>
+                            <p class="text-gray-400 mb-4 text-sm">Created a machine learning model to detect sign language gestures from images, achieving high accuracy after extensive model tuning and optimization.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">MediaPipe</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">OpenCV</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Keras</span>
+                            </div>
+                            <a href="#blog" class="text-blue-400 hover:text-blue-300 font-semibold">View Project<i class="fas fa-arrow-right ml-1"></i></a>
+                            
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="project-card glass-effect rounded-lg overflow-hidden">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Pneumonia Detection from X-ray</h3>
+                            <p class="text-gray-400 mb-4 text-sm">A deep learning web app to detect pneumonia from chest X-rays. It uses a VGG16 model with transfer learning and is deployed via Flask and Docker.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">VGG16</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Flask</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Docker</span>
+                            </div>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section py-16 pt-24 md:pt-0 bg-gray-800/50">
+            <div class="container-main px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Blog</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Blog Post 1 -->
+                    <div class="project-card glass-effect rounded-lg overflow-hidden blog-post-card">
+                        <img src="media/sign.png" alt="Blog Post Image" class="blog-logo">
+                        <div class="p-6 pt-12">
+                            <h3 class="text-xl font-bold text-white mb-2">Sign Language Detection: A Deep Dive</h3>
+                            <p class="text-gray-400 mb-4 text-sm">I wrote an article detailing the process of building a sign language detection model. It covers data preprocessing, model architecture, training, and performance visualization using tools like MediaPipe and TensorFlow.</p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">Read Blog... <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Blog Post 2 -->
+                    <div class="project-card glass-effect rounded-lg overflow-hidden blog-post-card">
+                        <img src="media/hadoop.png" alt="Blog Post Image" class="blog-logo">
+                        <div class="p-6 pt-12">
+                            <h3 class="text-xl font-bold text-white mb-2">Big Data & the Hadoop Ecosystem</h3>
+                            <p class="text-gray-400 mb-4 text-sm">I wrote an article detailing the fundamentals of Big Data and the Hadoop Ecosystem. It covers core components like HDFS, MapReduce, Hive, and Pig, and explains how they work together to process and manage large-scale datasets efficiently.</p>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">Read Blog... <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 py-16">
+        <div class="container-main px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Get In Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="text-center md:text-left">
+                    <p class="text-gray-400 mb-8 max-w-md mx-auto md:mx-0">I'm currently seeking new opportunities and am open to collaboration. Feel free to reach out!</p>
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-center md:justify-start text-lg">
+                            <i class="fas fa-envelope text-blue-400 mr-4"></i>
+                            <a href="mailto:pgupta0122333@gmail.com" class="text-gray-300 hover:text-white">pgupta0122333@gmail.com</a>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start text-lg">
+                            <i class="fas fa-phone-alt text-blue-400 mr-4"></i>
+                            <a href="tel:+916387120398" class="text-gray-300 hover:text-white">+91 6387120398</a>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start text-lg">
+                            <i class="fas fa-map-marker-alt text-blue-400 mr-4"></i>
+                            <span class="text-gray-300">Noida, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-effect p-8 rounded-lg">
+                    <form>
+                        <div class="mb-4">
+                            <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <textarea placeholder="Your Message" rows="4" class="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-colors">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-12">
+                <iframe class="rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.8363924775!2d77.209021!3d28.613939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1678886363000!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="text-gray-500 mt-12 text-center">&copy; 2025 Piyush Kumar Gupta. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="fixed bottom-5 right-5 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg hidden justify-center items-center hover:bg-blue-700 transition-all">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu when a link is clicked
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Typing effect
+            const typingElement = document.getElementById('typing-effect');
+            const words = ["Data Scientist", "AI Engineer", "Full Stack Developer", "MLOps Developer"];
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+
+            function type() {
+                const currentWord = words[wordIndex];
+                if (isDeleting) {
+                    typingElement.textContent = currentWord.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typingElement.textContent = currentWord.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                if (!isDeleting && charIndex === currentWord.length) {
+                    setTimeout(() => isDeleting = true, 2000);
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                }
+
+                const typeSpeed = isDeleting ? 100 : 200;
+                setTimeout(type, typeSpeed);
+            }
+            type();
+
+            // Active nav link highlighting on scroll
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Scroll to top button
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    scrollToTopBtn.classList.remove('hidden');
+                    scrollToTopBtn.classList.add('flex');
+                } else {
+                    scrollToTopBtn.classList.add('hidden');
+                    scrollToTopBtn.classList.remove('flex');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            
+            // Fade-in sections on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.experience-item, .skill-card, .project-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transition = 'opacity 0.7s ease-out, transform 0.7s ease-out';
+                el.style.transform = 'translateY(20px)';
+                observer.observe(el);
+            });
+            
+            const style = document.createElement('style');
+            style.innerHTML = `
+                .fade-in {
+                    opacity: 1 !important;
+                    transform: translateY(0) !important;
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
