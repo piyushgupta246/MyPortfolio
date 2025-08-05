@@ -54,14 +54,13 @@ main {
     flex-grow: 1;
 }
 
-.project-card > .p-6 > a {
-    margin-top: auto;
-}
 
-.skill-card:hover, .project-card:hover, .experience-item:hover {
+.skill-card:hover, .project-card:hover, .experience-item .glass-effect:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.2), 0 4px 6px -2px rgba(59, 130, 246, 0.1);
 }
+
+
 #scrollToTopBtn {
     transition: opacity 0.3s, visibility 0.3s;
 }
@@ -71,27 +70,23 @@ main {
     margin: 0 auto;
 }
 
-#blog .grid {
-    justify-items: center;
+.blog-card {
+    height: 400px;
 }
 
-#blog .project-card {
-    max-width: 350px; /* Make blog cards smaller */
+.blog-card .card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.blog-post-card {
-    position: relative;
-    padding-top: 20px; /* Adjust padding for smaller logo */
-}
-
-.blog-logo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    margin-left: 50%;
-    margin-top: 20%;
+.blog-logo-top {
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius:50%;
+    margin-top: 20px;
 }
