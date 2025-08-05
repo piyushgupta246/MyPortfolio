@@ -10,6 +10,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .project-card {
+            position: relative;
+            perspective: 1000px;
+        }
+        .project-card .card-content {
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+        .project-card:hover .card-content {
+            transform: rotateX(45deg);
+        }
+        .project-url {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #2563eb;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            pointer-events: all;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-card:hover .project-url {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+    </style>
 </head>
 
 <body class="antialiased">
@@ -20,8 +52,9 @@
             <nav class="hidden md:flex items-center space-x-8">
                 <a href="#home" class="nav-link text-gray-300 hover:text-white active">Home</a>
                 <a href="#experience" class="nav-link text-gray-300 hover:text-white">Experience</a>
-                <a href="#skills" class="nav-link text-gray-300 hover:text-white">Skills</a>
+                <a href="#education" class="nav-link text-gray-300 hover:text-white">Education</a>
                 <a href="#projects" class="nav-link text-gray-300 hover:text-white">Projects</a>
+                <a href="#skills" class="nav-link text-gray-300 hover:text-white">Skills</a>
                 <a href="#blog" class="nav-link text-gray-300 hover:text-white">Blog</a>
                 <a href="#contact" class="nav-link text-gray-300 hover:text-white">Contact</a>
             </nav>
@@ -33,8 +66,9 @@
         <div id="mobile-menu" class="hidden md:hidden">
             <a href="#home" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Home</a>
             <a href="#experience" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Experience</a>
-            <a href="#skills" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Skills</a>
+                <a href="#education" class="nav-link text-gray-300 hover:text-white">Education</a>
             <a href="#projects" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Projects</a>
+            <a href="#skills" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Skills</a>
             <a href="#blog" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Blog</a>
             <a href="#contact" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Contact</a>
         </div>
@@ -51,17 +85,17 @@
                         <span id="typing-effect"></span>
                     </p>
                     <p class="max-w-xl mx-auto md:mx-0 text-gray-400 mb-10">
-                        A passionate Computer Science student specializing in Data Science and AI. I build intelligent systems that solve real-world problems, from computer vision to predictive modeling.
+                        A passionate Computer Science student specializing in Data Science and AI. I build intelligent systems that solve real-world problems, from computer vision to predictive modeling. 
                     </p>
                     <div class="flex justify-center md:justify-start space-x-6">
                         <a href="https://www.linkedin.com/in/piyush-kumar-gupta-089312303" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-linkedin text-3xl"></i></a>
                         <a href="https://github.com/piyushgupta246" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-github text-3xl"></i></a>
                         <a href="https://leetcode.com/u/pgupta246" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fas fa-code text-3xl"></i></a>
-                        <a href="mailto:pgupta0122333@gmail.com" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fas fa-envelope text-3xl"></i></a>
-                        <a href="tel:+916387120398" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fas fa-phone-alt text-3xl"></i></a>
+                        <a href="https://medium.com/@pg120398" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-medium text-3xl"></i></a>
+                        <a href="https://x.com/piyushg17908839" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-xing text-3xl"></i></a>
                     </div>
                     <div class="mt-8">
-                        <a href="media/resume.pdf" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">View Resume</a>
+                        <a href="media/resume.pdf" target="_blank" class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">View Resume</a>
                     </div>
                 </div>
                 <!-- Right Image -->
@@ -119,6 +153,126 @@
                             <p class="text-sm font-medium text-blue-400 mb-2">GeeksForGeeks Hackfest 2024</p>
                             <p class="text-sm text-gray-300">Developed a pneumonia detection web app using a CNN model with high accuracy.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section py-16 pt-24 md:pt-0">
+            <div class="container-main px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Education</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass-effect rounded-lg shadow-xl p-6 mb-8">
+                        <h3 class="font-bold text-xl text-white mb-2">Bachelor of Technology</h3>
+                        <p class="text-sm font-medium text-blue-400 mb-2">Noida Institute Of Engineering And Technology</p>
+                        <p class="text-sm text-gray-400">2022 - 2026 | CGPA: 7.97</p>
+                        <p class="text-sm text-gray-300 mt-2">Specialized in Data Science, focusing on advanced algorithms, machine learning, and big data technologies.</p>
+                    </div>
+                    <div class="glass-effect rounded-lg shadow-xl p-6">
+                        <h3 class="font-bold text-xl text-white mb-2">Intermediate</h3>
+                        <p class="text-sm font-medium text-blue-400 mb-2">Jai Gurudev Raj Public School</p>
+                        <p class="text-sm text-gray-400">2020 - 2021 | Percentage: 81.6%</p>
+                        <p class="text-sm text-gray-300 mt-2">Passed Class 12 from CBSE with core subjects: Physics, Chemistry, Mathematics, and English.</p>
+                    </div>
+                    <div class="glass-effect rounded-lg shadow-xl p-6">
+                        <h3 class="font-bold text-xl text-white mb-2">High School</h3>
+                        <p class="text-sm font-medium text-blue-400 mb-2">Jai Gurudev Raj Public School</p>
+                        <p class="text-sm text-gray-400">2018 - 2019 | Percentage: 77.83%</p>
+                        <p class="text-sm text-gray-300 mt-2">Passed Class 10 under CBSE Board with core subjects like Mathematics, Science, English, and Social Science.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="section py-16 pt-24 md:pt-0 bg-gray-800/50">
+            <div class="container-main px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Featured Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-effect rounded-lg overflow-hidden">
+                        <div class="card-content p-8">
+                            <h3 class="text-xl font-bold text-white mb-2">Rooftop Solar Energy Estimation</h3>
+                            <p class="text-gray-400 mb-4 text-sm">Developed a vision transformer model to estimate rooftop solar suitability from satellite images, aiding in renewable energy planning and deployment.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">TensorFlow</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Vision Transformer</span>
+                            </div>
+                            <a data-url="https://github.com/piyushgupta246/Rooftop-Energy-Detection-Transformer-Based-Model" class="text-blue-400 hover:text-blue-300 font-semibold"></a>
+                        </div>
+                        <a href="#" class="project-url"></a>
+                    </div>
+                     <!-- Project 2 -->
+                    <div class="project-card glass-effect rounded-lg overflow-hidden">
+                        <div class="card-content p-8">
+                            <h3 class="text-xl font-bold text-white mb-2">Smart AI Assistant</h3>
+                            <p class="text-gray-400 mb-4 text-sm">Built an AI research assistant with real-time query handling using React and Flask, providing contextual responses through advanced NLP APIs.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">React</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Flask</span>
+                                 <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">NLP</span>
+                            </div>
+                            <a data-url="https://github.com/piyushgupta246/Smart-AI-Assistant" class="text-blue-400 hover:text-blue-300 font-semibold"></a>
+                        </div>
+                        <a href="#" class="project-url"></a>
+                    </div>
+                     <!-- Project 3 -->
+                    <div class="project-card glass-effect rounded-lg overflow-hidden">
+                        <div class="card-content p-8">
+                            <h3 class="text-xl font-bold text-white mb-2">Sign Language Detection</h3>
+                            <p class="text-gray-400 mb-4 text-sm">Created a machine learning model to detect sign language gestures from images, achieving high accuracy after extensive model tuning and optimization.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">MediaPipe</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">OpenCV</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Keras</span>
+                            </div>
+                            <a data-url="https://github.com/piyushgupta246/Sign-language-2025" class="text-blue-400 hover:text-blue-300 font-semibold"></a>
+                        </div>
+                        <a href="#" class="project-url"></a>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="project-card glass-effect rounded-lg overflow-hidden">
+                        <div class="card-content p-8">
+                            <h3 class="text-xl font-bold text-white mb-2">Pneumonia Detection from X-ray</h3>
+                            <p class="text-gray-400 mb-4 text-sm">A deep learning web app to detect pneumonia from chest X-rays. It uses a VGG16 model with transfer learning and is deployed via Flask and Docker.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">VGG16</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Flask</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Docker</span>
+                            </div>
+                            <a data-url="https://github.com/piyushgupta246/Pneumonia_Detection_2025" class="text-blue-400 hover:text-blue-300 font-semibold"></a>
+                        </div>
+                        <a href="#" class="project-url"></a>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="project-card glass-effect rounded-lg overflow-hidden">
+                        <div class="card-content p-8">
+                            <h3 class="text-xl font-bold text-white mb-2">Portfolio Website</h3>
+                            <p class="text-gray-400 mb-4 text-sm">Designed and developed a personal portfolio website using HTML, Tailwind CSS, and JavaScript to showcase my skills, projects, and experience.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">HTML</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Tailwind CSS</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">JavaScript</span>
+                            </div>
+                            <a data-url="https://github.com/piyushgupta246/MyPortfolio" class="text-blue-400 hover:text-blue-300 font-semibold"></a>
+                        </div>
+                        <a href="#" class="project-url"></a>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="project-card glass-effect rounded-lg overflow-hidden">
+                        <div class="card-content p-8">
+                            <h3 class="text-xl font-bold text-white mb-2">Mood Tracker Web App</h3>
+                            <p class="text-gray-400 mb-4 text-sm">A simple and elegant Mood Tracker Web App built with Python (Flask). Track your daily emotions using emojis, add personal notes and tags, and explore your mood trends over time to support better mental well-being.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Flask</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Python</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">HTML</span>
+                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">CSS</span>
+                            </div>
+                            <a data-url="https://github.com/piyushgupta246/Mood-Tracker-Web-Application" class="text-blue-400 hover:text-blue-300 font-semibold"></a>
+                        </div>
+                        <a href="#" class="project-url"></a>
                     </div>
                 </div>
             </div>
@@ -203,7 +357,6 @@
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Effective Communication</span>
                             <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Leadership</span>
-                            <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Problem Solving</span>
                             <span class="bg-blue-500/20 text-blue-300 text-sm font-medium px-3 py-1 rounded-full">Team Management</span>
                         </div>
                     </div>
@@ -212,92 +365,42 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section py-16 pt-24 md:pt-0 bg-gray-800/50">
-            <div class="container-main px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Featured Projects</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-                    <!-- Project 1 -->
-                    <div class="project-card glass-effect rounded-lg overflow-hidden">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Rooftop Solar Energy Estimation</h3>
-                            <p class="text-gray-400 mb-4 text-sm">Developed a vision transformer model to estimate rooftop solar suitability from satellite images, aiding in renewable energy planning and deployment.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">TensorFlow</span>
-                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Vision Transformer</span>
-                            </div>
-                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">View Project <i class="fas fa-arrow-right ml-1"></i></a>
-                            
-                        </div>
-                    </div>
-                     <!-- Project 2 -->
-                    <div class="project-card glass-effect rounded-lg overflow-hidden">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Smart AI Assistant</h3>
-                            <p class="text-gray-400 mb-4 text-sm">Built an AI research assistant with real-time query handling using React and Flask, providing contextual responses through advanced NLP APIs.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">React</span>
-                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Flask</span>
-                                 <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">NLP</span>
-                            </div>
-                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">View Project <i class="fas fa-arrow-right ml-1"></i></a>
-                            
-                        </div>
-                    </div>
-                     <!-- Project 3 -->
-                    <div class="project-card glass-effect rounded-lg overflow-hidden">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Sign Language Detection</h3>
-                            <p class="text-gray-400 mb-4 text-sm">Created a machine learning model to detect sign language gestures from images, achieving high accuracy after extensive model tuning and optimization.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">MediaPipe</span>
-                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">OpenCV</span>
-                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Keras</span>
-                            </div>
-                            <a href="#blog" class="text-blue-400 hover:text-blue-300 font-semibold">View Project<i class="fas fa-arrow-right ml-1"></i></a>
-                            
-                        </div>
-                    </div>
-                    <!-- Project 4 -->
-                    <div class="project-card glass-effect rounded-lg overflow-hidden">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Pneumonia Detection from X-ray</h3>
-                            <p class="text-gray-400 mb-4 text-sm">A deep learning web app to detect pneumonia from chest X-rays. It uses a VGG16 model with transfer learning and is deployed via Flask and Docker.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">VGG16</span>
-                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Flask</span>
-                                <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2 py-1 rounded">Docker</span>
-                            </div>
-                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">View Project <i class="fas fa-arrow-right ml-1"></i></a>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
         <!-- Blog Section -->
         <section id="blog" class="section py-16 pt-24 md:pt-0 bg-gray-800/50">
             <div class="container-main px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Blog</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                     <!-- Blog Post 1 -->
-                    <div class="project-card glass-effect rounded-lg overflow-hidden blog-post-card">
-                        <img src="media/sign.png" alt="Blog Post Image" class="blog-logo">
-                        <div class="p-6 pt-12">
-                            <h3 class="text-xl font-bold text-white mb-2">Sign Language Detection: A Deep Dive</h3>
+                    <div class="project-card glass-effect rounded-lg overflow-hidden blog-card">
+                        <img src="media/sign.png" alt="Blog Post Image" class="blog-logo-top">
+                        <div class="card-content p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Sign Language Detection System</h3>
                             <p class="text-gray-400 mb-4 text-sm">I wrote an article detailing the process of building a sign language detection model. It covers data preprocessing, model architecture, training, and performance visualization using tools like MediaPipe and TensorFlow.</p>
-                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">Read Blog... <i class="fas fa-arrow-right ml-1"></i></a>
+                            <a data-url="https://medium.com/@pg120398/sign-language-detection-model-f59e96da5c21" class="text-blue-400 hover:text-blue-300 font-semibold"></a>
                         </div>
+                        <a href="#" class="project-url"></a>
                     </div>
                     <!-- Blog Post 2 -->
-                    <div class="project-card glass-effect rounded-lg overflow-hidden blog-post-card">
-                        <img src="media/hadoop.png" alt="Blog Post Image" class="blog-logo">
-                        <div class="p-6 pt-12">
+                    <div class="project-card glass-effect rounded-lg overflow-hidden blog-card">
+                        <img src="media/hadoop.png" alt="Blog Post Image" class="blog-logo-top">
+                        <div class="card-content p-6">
                             <h3 class="text-xl font-bold text-white mb-2">Big Data & the Hadoop Ecosystem</h3>
                             <p class="text-gray-400 mb-4 text-sm">I wrote an article detailing the fundamentals of Big Data and the Hadoop Ecosystem. It covers core components like HDFS, MapReduce, Hive, and Pig, and explains how they work together to process and manage large-scale datasets efficiently.</p>
-                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">Read Blog... <i class="fas fa-arrow-right ml-1"></i></a>
+                            <a data-url="https://medium.com/@pg120398/introduction-to-big-data-and-hadoop-ecosystem-5614819e4901" class="text-blue-400 hover:text-blue-300 font-semibold"></a>
                         </div>
+                        <a href="#" class="project-url"></a>
+                    </div>
+                    <!-- Blog Post 3 -->
+                    <div class="project-card glass-effect rounded-lg overflow-hidden blog-card">
+                        <img src="media/port_blog.png" alt="Blog Post Image" class="blog-logo-top">
+                        <div class="card-content p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Why Every Developer Needs a Portfolio</h3>
+                            <p class="text-gray-400 mb-4 text-sm">An in-depth look at how a vision transformer model can estimate rooftop solar suitability from satellite images, aiding in renewable energy planning. It helps you stand out to recruiters and build a strong personal brand.</p>
+                            <a data-url="https://medium.com/@pg120398/every-developer-needs-a-portfolio-3685ab3c7c1f" class="text-blue-400 hover:text-blue-300 font-semibold"></a>
+                        </div>
+                        <a href="#" class="project-url"></a>
                     </div>
                 </div>
             </div>
@@ -314,11 +417,11 @@
                     <div class="space-y-6">
                         <div class="flex items-center justify-center md:justify-start text-lg">
                             <i class="fas fa-envelope text-blue-400 mr-4"></i>
-                            <a href="mailto:pgupta0122333@gmail.com" class="text-gray-300 hover:text-white">pgupta0122333@gmail.com</a>
+                            <span class="text-gray-300">pgupta0122333@gmail.com</span>
                         </div>
                         <div class="flex items-center justify-center md:justify-start text-lg">
                             <i class="fas fa-phone-alt text-blue-400 mr-4"></i>
-                            <a href="tel:+916387120398" class="text-gray-300 hover:text-white">+91 6387120398</a>
+                            <span class="text-gray-300">+91 6387120398</span>
                         </div>
                         <div class="flex items-center justify-center md:justify-start text-lg">
                             <i class="fas fa-map-marker-alt text-blue-400 mr-4"></i>
@@ -460,8 +563,18 @@
                 }
             `;
             document.head.appendChild(style);
+
+            // Project card hover effect
+            document.querySelectorAll('.project-card').forEach(card => {
+                const urlLink = card.querySelector('.project-url');
+                const projectLink = card.querySelector('a[data-url]');
+                if (urlLink && projectLink) {
+                    const url = projectLink.getAttribute('data-url');
+                    urlLink.href = url;
+                    urlLink.textContent = "Read Blog";
+                }
+            });
         });
     </script>
 </body>
 </html>
-
