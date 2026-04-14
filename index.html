@@ -58,7 +58,7 @@
                 <a href="#blog" class="nav-link text-gray-300 hover:text-white">Blog</a>
                 <a href="#contact" class="nav-link text-gray-300 hover:text-white">Contact</a>
             </nav>
-            <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+            <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle mobile menu">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
@@ -66,7 +66,7 @@
         <div id="mobile-menu" class="hidden md:hidden">
             <a href="#home" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Home</a>
             <a href="#experience" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Experience</a>
-                <a href="#education" class="nav-link text-gray-300 hover:text-white">Education</a>
+            <a href="#education" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Education</a>
             <a href="#projects" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Projects</a>
             <a href="#skills" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Skills</a>
             <a href="#blog" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Blog</a>
@@ -88,75 +88,104 @@
                         A passionate Computer Science student specializing in Data Science and AI. I build intelligent systems that solve real-world problems, from computer vision to predictive modeling. 
                     </p>
                     <div class="flex justify-center md:justify-start space-x-6">
-                        <a href="https://www.linkedin.com/in/piyush-kumar-gupta-089312303" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-linkedin text-3xl"></i></a>
-                        <a href="https://github.com/piyushgupta246" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-github text-3xl"></i></a>
-                        <a href="https://leetcode.com/u/pgupta246" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fas fa-code text-3xl"></i></a>
-                        <a href="https://medium.com/@pg120398" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-medium text-3xl"></i></a>
-                        <a href="https://x.com/piyushg17908839" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-xing text-3xl"></i></a>
+                        <a href="https://www.linkedin.com/in/piyush-kumar-gupta-089312303" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-linkedin text-3xl"></i></a>
+                        <a href="https://github.com/piyushgupta246" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-github text-3xl"></i></a>
+                        <a href="https://leetcode.com/u/pgupta246" target="_blank" rel="noopener noreferrer" aria-label="LeetCode profile" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fas fa-code text-3xl"></i></a>
+                        <a href="https://medium.com/@pg120398" target="_blank" rel="noopener noreferrer" aria-label="Medium profile" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-medium text-3xl"></i></a>
+                        <a href="https://x.com/piyushg17908839" target="_blank" rel="noopener noreferrer" aria-label="X profile" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-x-twitter text-3xl"></i></a>
                     </div>
                     <div class="mt-8">
-                        <a href="Resume2.pdf" target="_blank" class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">View Resume</a>
+                        <a href="media/resume-2.pdf" target="_blank" rel="noopener noreferrer" class="bg-gray-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">View Resume</a>
                     </div>
                 </div>
                 <!-- Right Image -->
                 <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-                    <img src="media/profile_logo.jpg" alt="Piyush Kumar Gupta" class="rounded-full shadow-lg w-64 h-64 md:w-80 md:h-80 object-cover">
+                    <img src="media/img.jpeg" alt="Piyush Kumar Gupta" class="rounded-full shadow-lg w-64 h-64 md:w-80 md:h-80 object-cover">
                 </div>
             </div>
         </section>
 
         <!-- Experience Section -->
-        <section id="experience" class="section py-16 pt-24 md:pt-0 bg-gray-800/50">
-            <div class="container-main px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Experience & Events</h2>
-                <div class="relative max-w-4xl mx-auto">
-                    <!-- Timeline line -->
-                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-700"></div>
-                    
-                    <!-- Timeline Item 1 -->
-                    <div class="experience-item mb-12 flex justify-between items-center w-full">
-                        <div class="order-1 w-5/12"></div>
-                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
-                            <i class="fas fa-briefcase mx-auto text-white text-sm"></i>
-                        </div>
-                        <div class="order-1 glass-effect rounded-lg shadow-xl w-5/12 px-6 py-4">
-                            <p class="text-sm text-gray-400">Nov 2024 - Jan 2025</p>
-                            <h3 class="font-bold text-lg text-white mb-2">AI & ML Trainee</h3>
-                            <p class="text-sm font-medium text-blue-400 mb-2">Pyramid IT Consulting Pvt. Ltd.</p>
-                            <p class="text-sm text-gray-300">Built image classification and real-time object detection systems using PyTorch and YOLOv5.</p>
-                        </div>
-                    </div>
+<section id="experience" class="section py-16 pt-24 md:pt-0 bg-gray-800/50">
+    <div class="container-main px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+            Experience & Events
+        </h2>
 
-                    <!-- Timeline Item 2 -->
-                    <div class="experience-item mb-12 flex justify-between flex-row-reverse items-center w-full">
-                        <div class="order-1 w-5/12"></div>
-                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
-                            <i class="fas fa-chart-line mx-auto text-white text-sm"></i>
-                        </div>
-                        <div class="order-1 glass-effect rounded-lg shadow-xl w-5/12 px-6 py-4">
-                             <p class="text-sm text-gray-400">Oct 2024 - Nov 2024</p>
-                            <h3 class="font-bold text-lg text-white mb-2">Data Science Intern</h3>
-                            <p class="text-sm font-medium text-blue-400 mb-2">Next Gen Dev</p>
-                            <p class="text-sm text-gray-300">Developed ML projects like stock prediction and sentiment analysis, and deployed models for real-time predictions.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Timeline Item 3 -->
-                    <div class="experience-item mb-12 flex justify-between items-center w-full">
-                        <div class="order-1 w-5/12"></div>
-                        <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
-                            <i class="fas fa-trophy mx-auto text-white text-sm"></i>
-                        </div>
-                        <div class="order-1 glass-effect rounded-lg shadow-xl w-5/12 px-6 py-4">
-                            <p class="text-sm text-gray-400">Sep 2024</p>
-                            <h3 class="font-bold text-lg text-white mb-2">Hackathon Runner-up</h3>
-                            <p class="text-sm font-medium text-blue-400 mb-2">GeeksForGeeks Hackfest 2024</p>
-                            <p class="text-sm text-gray-300">Developed a pneumonia detection web app using a CNN model with high accuracy.</p>
-                        </div>
-                    </div>
+        <div class="relative max-w-4xl mx-auto">
+            <!-- Timeline line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-700"></div>
+
+            <!-- 1️⃣ Item (LEFT) -->
+            <div class="experience-item mb-12 flex justify-between items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <i class="fas fa-briefcase mx-auto text-white text-sm"></i>
+                </div>
+                <div class="order-1 glass-effect rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <p class="text-sm text-gray-400">Aug 2025 - Oct 2025</p>
+                    <h3 class="font-bold text-lg text-white mb-2">Data Scientist Trainee</h3>
+                    <p class="text-sm font-medium text-blue-400 mb-2">MyAnatomy Integration</p>
+                    <p class="text-sm text-gray-300">
+                        Built expertise in NLP, ML, DL, and MLOps by developing and deploying models on real-world projects.
+                    </p>
                 </div>
             </div>
-        </section>
+
+            <!-- 2️⃣ Item (RIGHT) -->
+            <div class="experience-item mb-12 flex justify-between flex-row-reverse items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <i class="fas fa-chart-line mx-auto text-white text-sm"></i>
+                </div>
+                <div class="order-1 glass-effect rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <p class="text-sm text-gray-400">Oct 2024 - Nov 2024</p>
+                    <h3 class="font-bold text-lg text-white mb-2">Data Science Intern</h3>
+                    <p class="text-sm font-medium text-blue-400 mb-2">Next Gen Dev</p>
+                    <p class="text-sm text-gray-300">
+                        Developed ML projects like stock prediction and sentiment analysis, and deployed models for real-time predictions.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3️⃣ Item (LEFT) -->
+            <div class="experience-item mb-12 flex justify-between items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <i class="fas fa-brain mx-auto text-white text-sm"></i>
+                </div>
+                <div class="order-1 glass-effect rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <p class="text-sm text-gray-400">Sep 2024</p>
+                    <h3 class="font-bold text-lg text-white mb-2">Hackathon Runner-up</h3>
+                    <p class="text-sm font-medium text-blue-400 mb-2">GeeksForGeeks Hackfest 2024</p>
+                    <p class="text-sm text-gray-300">
+                        Developed a pneumonia detection web app using a CNN model with high accuracy.
+                    </p>
+                </div>
+                
+            </div>
+
+            <!-- 4️⃣ Item (RIGHT) -->
+            <div class="experience-item mb-12 flex justify-between flex-row-reverse items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+                    <i class="fas fa-trophy mx-auto text-white text-sm"></i>
+                </div>
+                <div class="order-1 glass-effect rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <p class="text-sm text-gray-400">Aug 2023 - Sep 2023</p>
+                    <h3 class="font-bold text-lg text-white mb-2">AI & ML Trainee</h3>
+                    <p class="text-sm font-medium text-blue-400 mb-2">YBI Foundation</p>
+                    <p class="text-sm text-gray-300">
+                        Gained AI/ML knowledge, handled data preprocessing and visualization, and developed models for analysis and insights.
+                    </p>
+                </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+</section>
 
         <!-- Education Section -->
         <section id="education" class="section py-16 pt-24 md:pt-0">
@@ -166,7 +195,7 @@
                     <div class="glass-effect rounded-lg shadow-xl p-6 mb-8">
                         <h3 class="font-bold text-xl text-white mb-2">Bachelor of Technology</h3>
                         <p class="text-sm font-medium text-blue-400 mb-2">Noida Institute Of Engineering And Technology</p>
-                        <p class="text-sm text-gray-400">2022 - 2026 | CGPA: 7.97</p>
+                        <p class="text-sm text-gray-400">2022 - 2026 | CGPA: 7.93</p>
                         <p class="text-sm text-gray-300 mt-2">Specialized in Data Science, focusing on advanced algorithms, machine learning, and big data technologies.</p>
                     </div>
                     <div class="glass-effect rounded-lg shadow-xl p-6">
@@ -174,8 +203,8 @@
                         <p class="text-sm font-medium text-blue-400 mb-2">Jai Gurudev Raj Public School</p>
                         <p class="text-sm text-gray-400">2020 - 2021 | Percentage: 81.6%</p>
                         <p class="text-sm text-gray-300 mt-2">Passed Class 12 from CBSE with core subjects: Physics, Chemistry, Mathematics, and English.</p>
-                    </div><br>
-                    <div class="glass-effect rounded-lg shadow-xl p-6">
+                    </div>
+                    <div class="glass-effect rounded-lg shadow-xl p-6 mt-8">
                         <h3 class="font-bold text-xl text-white mb-2">High School</h3>
                         <p class="text-sm font-medium text-blue-400 mb-2">Jai Gurudev Raj Public School</p>
                         <p class="text-sm text-gray-400">2018 - 2019 | Percentage: 77.83%</p>
@@ -445,7 +474,7 @@
                 </div>
             </div>
             <div class="mt-12">
-                <iframe class="rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.8363924775!2d77.209021!3d28.613939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1678886363000!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="rounded-lg" title="Map showing Noida, India" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.8363924775!2d77.209021!3d28.613939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1678886363000!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <p class="text-gray-500 mt-12 text-center">&copy; 2025 Piyush Kumar Gupta. All Rights Reserved.</p>
         </div>
@@ -578,6 +607,5 @@
     </script>
 </body>
 </html>
-
 
 
